@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import './index.css';
 import Navbar from "./Fragments/Navbar";
+import Footer from './Pages/Footer';
 
 
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path:"Navbar",
     element:< Navbar/>
+  },
+  {
+    path:"Footer",
+    element:< Footer/>
   },
 
 ])
