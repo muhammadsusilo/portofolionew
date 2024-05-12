@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import './index.css';
 import Navbar from "./Fragments/Navbar";
 import Footer from './Pages/Footer';
+import Home from './Pages/Home';
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,12 @@ const router = createBrowserRouter([
     path:"Footer",
     element:< Footer/>
   },
+  
+  {
+    path:"Home",
+    element:< Home/>
+  },
+  
 
 ])
 
