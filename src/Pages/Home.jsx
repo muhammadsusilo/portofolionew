@@ -17,12 +17,12 @@ const Home = () => {
               omnis sunt recusandae
             </p>
             <div className="font-semibold my-8 flex group:">
-              <div className="hover:translate-y-6 transition duration-100 ease-in">
+              <div className="hover:translate-y-6 transition duration-150 ease-in">
                 <a href="#" className="bg-orange-400 p-3 px-4 mr-3 rounded-md ">
                   <button>Hire Me</button>
                 </a>
               </div>
-              <div className="hover:translate-x-6 transition duration-100 ease-in">
+              <div className="hover:translate-x-6 transition duration-150 ease-in">
                 <a href="#" className="bg-orange-400 p-3 px-4 rounded-md">
                   <button>Download CV</button>
                 </a>

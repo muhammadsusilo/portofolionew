@@ -6,7 +6,6 @@ import Navbar from "./Fragments/Navbar";
 import Footer from './Pages/Footer';
 import Home from './Pages/Home';
 
-
 const router = createBrowserRouter([
   {
     path:"/",
