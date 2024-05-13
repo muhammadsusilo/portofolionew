@@ -1,3 +1,4 @@
+import SosialMedia from "../Elements/sosialMedia";
 import Navbar from "../Fragments/Navbar";
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
+            <SosialMedia/>
           </div>
           <div>
             <img

@@ -49,15 +49,50 @@
 
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGolang } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faSquareWhatsapp, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 
+const sMedia = [
+  {
+    id: 1,
+    name: 'Email',
+    href: '#',
+    icon: <FontAwesomeIcon icon={faEnvelope} />,
+  },
+  {
+    id: 2,
+    name: 'Github',
+    href: '#',
+    icon: <FontAwesomeIcon icon={faGithub} />,
+  },
+  {
+    id: 3,
+    name: 'Linkedin',
+    href: '#',
+    icon: <FontAwesomeIcon icon={faLinkedin} />,
+  },
+  {
+    id: 4,
+    name: 'Linkedin',
+    href: '#',
+    icon: <FontAwesomeIcon icon={faSquareWhatsapp} />,
+  },
+];
 const SosialMedia = () => {
   return (
-    <div>
-      <FontAwesomeIcon icon={faEnvelope} />
-      <FontAwesomeIcon icon={faFacebook} />
-      <FontAwesomeIcon icon={faGolang} />
+    <div className="w-fit">
+      {/* contact */}
+      <div className="text-center bg-gray-300  rounded-full group">
+        <div className="relative overflow-hidden p-3">
+          <FontAwesomeIcon
+            icon={faSquareWhatsapp}
+            className=" size-8 group-hover:scale-150 transition-all duration-200"
+          />
+          {/* <div className="absolute">
+            <span>WhatsApp</span>
+          </div> */}
+        </div>
+      </div>
     </div>
   );
 };
