@@ -23,16 +23,16 @@ const Home = () => {
                   <button>Hire Me</button>
                 </a>
               </div> */}
-              <div className="group bg-transparent mr-4 ">
+              <div className="group mr-4 ">
                 <a href="">
-                  <button className="group-hover:translate-y-6 transition duration-200 ease-in bg-orange-400 p-3 rounded-md">
+                  <button className="group-hover:translate-y-6 bg-orange-400 hover:bg-orange-600 transition duration-200 ease-in  p-3 rounded-md">
                     Hire Me
                   </button>
                 </a>
               </div>
-              <div className="group bg-transparent ">
+              <div className="group ">
                 <a href="">
-                  <button className="group-hover:translate-x-6 transition duration-200 ease-in bg-orange-400 p-3 rounded-md">
+                  <button className="group-hover:translate-x-6 bg-orange-400 hover:bg-orange-600 transition duration-200 ease-in  p-3 rounded-md">
                     Download CV
                   </button>
                 </a>
