@@ -38,7 +38,7 @@ const sMedia = [
 ];
 const SosialMedia = () => {
   return (
-    <div className="w-fit mx-3 flex ">
+    <div className="w-fit mx-3 flex">
       {sMedia.map((media) => (
         <div className="text-center group">
           <FontAwesomeIcon
