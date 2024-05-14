@@ -1,98 +1,52 @@
-// import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-// const sMedia = [
-//   {
-//     id: 1,
-//     name: 'Linkedin',
-//     href: '#',
-//     icon: <FontAwesomeIcon icon="fa-brands fa-linkedin" />,
-//   },
-//   {
-//     id: 2,
-//     name: 'Github',
-//     href: '#',
-//     icon: <FontAwesomeIcon icon="fa-brands fa-github" />,
-//   },
-//   {
-//     id: 3,
-//     name: 'Instagram',
-//     href: '#',
-//     icon: <FontAwesomeIcon icon="fa-brands fa-instagram" />,
-//   },
-//   {
-//     id: 4,
-//     name: 'Telegram',
-//     href: '#',
-//     icon: <FontAwesomeIcon icon="fa-brands fa-telegram" />,
-//   },
-// ];
-
-// const SosialMedia = () => {
-//   return (
-//     <div>
-//       {/* {sMedia.map((social, index) => (
-//         <div key={index} className="bg-blue-500">
-//           {social.icon}
-//           <span>{social.name}</span>
-//           <FontAwesomeIcon icon="fa-brands fa-telegram" />
-//         </div>
-//       ))} */}
-//       <p>
-//         {/* <FontAwesomeIcon icon="check-square" /> */}
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default SosialMedia;
-
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faAddressCard } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faSquareWhatsapp, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faSquareWhatsapp,
+  faWhatsapp,
+  faLinkedin,
+  faInstagram,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons';
 
 const sMedia = [
   {
     id: 1,
     name: 'Email',
     href: '#',
-    icon: <FontAwesomeIcon icon={faEnvelope} />,
+    ikon: faEnvelope,
   },
   {
     id: 2,
     name: 'Github',
     href: '#',
-    icon: <FontAwesomeIcon icon={faGithub} />,
+    ikon: faGithub,
   },
   {
     id: 3,
     name: 'Linkedin',
     href: '#',
-    icon: <FontAwesomeIcon icon={faLinkedin} />,
+    ikon: faLinkedin,
   },
   {
     id: 4,
     name: 'Linkedin',
     href: '#',
-    icon: <FontAwesomeIcon icon={faSquareWhatsapp} />,
+    ikon: faWhatsapp,
   },
 ];
 const SosialMedia = () => {
   return (
-    <div className="w-fit">
-      {/* contact */}
-      <div className="text-center bg-gray-300  rounded-full group">
-        <div className="relative overflow-hidden p-3">
+    <div className="w-fit mx-3 flex ">
+      {sMedia.map((media) => (
+        <div className="text-center group">
           <FontAwesomeIcon
-            icon={faSquareWhatsapp}
-            className=" size-8 group-hover:scale-150 transition-all duration-200"
+            icon={media.ikon}
+            className="bg-gray-300 rounded-full p-3 mx-2 size-6 group-hover:scale-150 transition-all duration-200"
           />
-          {/* <div className="absolute">
-            <span>WhatsApp</span>
-          </div> */}
         </div>
-      </div>
+      ))}
     </div>
   );
 };
