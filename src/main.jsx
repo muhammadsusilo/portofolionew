@@ -5,6 +5,7 @@ import './index.css';
 import Navbar from "./Fragments/Navbar";
 import Footer from './Pages/Footer';
 import Home from './Pages/Home';
+import About from './Pages/About';
 
 const router = createBrowserRouter([
   {
@@ -12,17 +13,12 @@ const router = createBrowserRouter([
     element:<h1>Hello React</h1>,
   },
   {
-    path:"Navbar",
-    element:< Navbar/>
-  },
-  {
-    path:"Footer",
-    element:< Footer/>
-  },
-  
-  {
     path:"Home",
     element:< Home/>
+  },
+  {
+    path:"About",
+    element:< About/>
   },
   
 
