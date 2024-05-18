@@ -10,17 +10,12 @@ import About from './Pages/About';
 const router = createBrowserRouter([
   {
     path:"/",
-    element:<h1>Hello React</h1>,
-  },
-  {
-    path:"Home",
     element:< Home/>
   },
   {
     path:"About",
     element:< About/>
   },
-  
 
 ])
 
