@@ -2,6 +2,7 @@ import SosialMedia from "../Elements/sosialMedia";
 import Navbar from "../Fragments/Navbar";
 import About from "./About";
 import Certificate from "./Certificate";
+import Contact from "./Contact";
 import Project from "./Project";
 
 const Home = () => {
@@ -49,6 +50,7 @@ const Home = () => {
           <About />
           <Project />
           <Certificate/>
+          <Contact/>
         </div>
       </>
     );
