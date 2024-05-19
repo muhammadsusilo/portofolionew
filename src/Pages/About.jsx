@@ -1,8 +1,8 @@
 const About = () => {
   return (
-    <div className="px-36 ">
-      <h1 className="text-3xl font-semibold py-5 flex justify-center">About</h1>
-      <div className="h-screen flex justify-between">
+    <div className="px-36 py-20 h-full">
+      <h1 className="text-3xl font-semibold flex justify-center mb-4">About</h1>
+      <div className=" flex justify-between">
         <div>
           <img src="https://placehold.co/500x500?font=roboto" alt="About" />
         </div>
