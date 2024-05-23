@@ -1,3 +1,5 @@
+import * as React from 'react';
+import { Link } from "react-router-dom";
 import SosialMedia from '../Elements/sosialMedia';
 
 const listFooter = [
@@ -13,14 +15,14 @@ const Footer = () => {
     <div className="py-10 bg-gray-100 flex justify-center flex-col items-center text-center leading-loose">
       <h1>Muhammad Susilo</h1>
       <ul className="flex gap-4 mb-2 ">
-       {listFooter.map((list) =>{
-         <li key={list.id}>
-           <a href={list.link}>{list.name}</a>
-         </li>;
-       })}
+        {listFooter.map((list) => {
+          <li key={list.id}>
+            <Link to={list.link}>{list.name}</Link>
+          </li>;
+        })}
       </ul>
       <SosialMedia />
-      <div>
+      <div className="text-sm">
         <p>Copyright &copy; 2021 Muhammad Susilo. All rights reserved.</p>
         <p>in created to React JS and Tailwind CSS</p>
       </div>

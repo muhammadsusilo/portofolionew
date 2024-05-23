@@ -25,8 +25,8 @@ const About = () => {
             Skills silo yang dimiliki:
           </p>
           <ul className="mt-3 list-disc pl-6 text-sm">
-            {skills.map((skill) => (
-              <li>{skill}</li>
+            {skills.map(( skill) => (
+              <li >{skill}</li>
             ))}
           </ul>
         </div>
