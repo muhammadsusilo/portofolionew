@@ -1,9 +1,16 @@
 
 
-export function button() {
+export default function Button(props) {
+  const { children,css} = props;
   return (
     <div>
-      <h1>Hello World</h1>
+      <a href="#">
+        <button
+          className={`${css}`}
+        >
+          {children}
+        </button>
+      </a>
     </div>
-  )
+  );
 }
