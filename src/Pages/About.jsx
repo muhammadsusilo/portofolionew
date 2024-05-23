@@ -1,3 +1,11 @@
+const skills = [
+  'HTML5 & CSS3',
+  'SASS',
+  'Tailwind CSS',
+  'JavaScript',
+  'React JS',
+];
+
 const About = () => {
   return (
     <div className="px-36 py-20 h-full">
@@ -17,11 +25,11 @@ const About = () => {
             Skills silo yang dimiliki:
           </p>
           <ul className="mt-3 list-disc pl-6 text-sm">
-            <li>HTML5 & CSS3</li>
-            <li>SASS</li>
-            <li>Tailwind CSS</li>
-            <li>JavaScript</li>
-            <li>React JS</li>
+            {skills.map((skill) => (
+              
+              <li>{skill}</li>
+
+            ))}
           </ul>
         </div>
       </div>

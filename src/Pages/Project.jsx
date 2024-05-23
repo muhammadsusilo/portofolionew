@@ -11,6 +11,7 @@ const Project = () => {
         <div className="">
           <img
             src="https://placehold.co/330x200"
+            // src="img/muhammadsusilo.png"
             alt="project"
             className="rounded-lg"
           />

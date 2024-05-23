@@ -1,11 +1,11 @@
 import SosialMedia from '../Elements/sosialMedia';
 
 const listFooter = [
-  { id: 1, link: '#', name: 'Home'},
+  {id: 1,link: '#', name: 'Home'},
   {id: 2,link: '#', name: 'About'},
-  {  id: 3, link: '#', name: 'Project'},
-  { id: 4, link: '#',  name: 'Certificate'},
-  {  id: 5,link: '#', name: 'Contact'},
+  {id: 3,link: '#', name: 'Project'},
+  {id: 4,link: '#', name: 'Certificate'},
+  {id: 5,link: '#', name: 'Contact'},
 ];
 
 const Footer = () => {
