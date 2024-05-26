@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faEdge } from '@fortawesome/free-brands-svg-icons';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
   const { children } = props;
   return (
-    <div className="bg-white max-w-xs w-full rounded-lg shadow-lg shadow-gray-600">
+    <div className="bg-white flex flex-col w-full max-w-72  rounded-lg shadow-lg shadow-gray-600 max-lg:">
       {children}
     </div>
   );
@@ -16,7 +17,9 @@ const Header = (props) => {
   return (
     <div>
       <div>
-        <img src={src} alt={alt} className="rounded-lg" />
+        <Link to="#">
+          <img src={src} alt={alt} className="rounded-lg" />
+        </Link>
       </div>
     </div>
   );

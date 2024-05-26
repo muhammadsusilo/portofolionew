@@ -1,3 +1,5 @@
+
+import Container from '../Fragments/Container';
 const skills = [
   'HTML5 & CSS3',
   'SASS',
@@ -8,11 +10,11 @@ const skills = [
 
 const About = () => {
   return (
-    <div className="px-36 py-20 h-full">
-      <h1 className="text-3xl font-semibold flex justify-center mb-4">About</h1>
+    <Container>
+      <Container.header>About</Container.header>
       <div className=" flex justify-between">
         <div>
-          <img src="https://placehold.co/500x500?font=roboto" alt="About" />
+          <img src="img/skills.svg" alt="About" />
         </div>
         <div className="pl-10">
           <p className="my-1">
@@ -25,13 +27,13 @@ const About = () => {
             Skills silo yang dimiliki:
           </p>
           <ul className="mt-3 list-disc pl-6 text-sm">
-            {skills.map(( skill) => (
-              <li >{skill}</li>
+            {skills.map((skill) => (
+              <li>{skill}</li>
             ))}
           </ul>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

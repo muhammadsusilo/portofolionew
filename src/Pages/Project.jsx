@@ -1,15 +1,13 @@
 import Cart from "../Elements/cart";
-
+import Container from "../Fragments/Container";
 
 const Project = () => {
   return (
-    <div className="px-36 py-20 h-full bg-gray-300 flex flex-col items-center">
-      <h1 className="text-3xl font-semibold flex justify-center mb-4">
-        Project
-      </h1>
-      <div>
+    <Container background="bg-gray-200">
+      <Container.header>Project</Container.header>
+      <div className="flex justify-center">
         <Cart>
-          <Cart.Header src="https://placehold.co/330x200" alt="E-Learning" />
+          <Cart.Header src="https://placehold.co/300x180" alt="E-Learning" />
           <Cart.Content
             title="E-learning"
             description="E-learning is Website to scholl in online learning"
@@ -17,7 +15,7 @@ const Project = () => {
           <Cart.Footer />
         </Cart>
       </div>
-    </div>
+    </Container>
   );
 };
 
