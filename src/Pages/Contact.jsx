@@ -5,12 +5,33 @@ import Footer from '../Fragments/Footer';
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
 import Container from '../Fragments/Container';
+import { icon } from '@fortawesome/fontawesome-svg-core';
 
 const contactku = [
-  { id: 1, name: 'Email' },
-  { id: 2, name: 'Linkedin' },
-  { id: 3, name: 'WhatsApp' },
-  { id: 4, name: 'Bussiness Card' },
+  {
+    id: 1,
+    name: 'Email',
+    ikon: <FontAwesomeIcon icon={faEnvelope} />,
+    link: '#',
+  },
+  {
+    id: 2,
+    name: 'Linkedin',
+    ikon: <FontAwesomeIcon icon={faLinkedin} />,
+    link: '#',
+  },
+  {
+    id: 3,
+    name: 'WhatsApp',
+    ikon: <FontAwesomeIcon icon={faWhatsapp} />,
+    link: '#',
+  },
+  {
+    id: 4,
+    name: 'Bussiness Card',
+    ikon: <FontAwesomeIcon icon={faIdCard} />,
+    link: "#",
+  },
 ];
 const Contact = () => {
   return (
@@ -23,14 +44,18 @@ const Contact = () => {
           <ul className="leading-normal">
             {contactku.map((contac) => {
               return (
-                <li key={contac.id}>
-                  <Link to="#">{[contac.link, contac.name]}</Link>
+                <li key={contac.id} >
+                  <Link to={contac.link}>
+                    {/* {[contac.ikon, contac.name]} */}
+                    <span className='mr-2'>{contac.ikon}</span>
+                    <span>{contac.name}</span>
+                  </Link>
                 </li>
               );
             })}
           </ul>
-          <Link to="#" className="w-fit">
-            <button className="my-5 p-2 px-16 bg-orange-400 rounded-lg hover:bg-orange-500">
+          <Link to="#" className="w-fit ">
+            <button className="my-5 p-2 px-16 bg-orange-400 rounded-lg hover:bg-orange-500 max-sm:w-full">
               Download CV
             </button>
           </Link>

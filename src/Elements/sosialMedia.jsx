@@ -11,7 +11,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
-
 const sMedia = [
   {
     id: 1,
@@ -40,7 +39,7 @@ const sMedia = [
 ];
 const SosialMedia = () => {
   return (
-    <div className="w-fit mx-3 flex">
+    <div className="w-fit mx-3 flex max-sm:justify-center">
       {sMedia.map((media) => (
         <div className="text-center group"key={media.id}>
           <Link to={media.href}>

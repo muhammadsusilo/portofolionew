@@ -1,7 +1,9 @@
 const Container = (props) => {
   const { children, background } = props;
   return (
-    <div className={`px-36 py-20 h-full ${background} max-lg:p-16 `}>
+    <div
+      className={`px-36 py-16 h-full ${background} max-lg:p-16 max-sm:px-4 max-sm:py-9`}
+    >
       {children}
     </div>
   );
