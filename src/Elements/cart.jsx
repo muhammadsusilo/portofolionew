@@ -47,7 +47,7 @@ const Content = (props) => {
 const Footer = () => {
   return (
     <div>
-      <div className="py-2 flex justify-end gap-x-2">
+      <div className="p-2 flex justify-end gap-x-2">
         <Button css="p-1 bg-gray-200 text-xs rounded-xl hover:bg-gray-400 duration-100">
           <FontAwesomeIcon icon={faEdge} className="px-1" />
           Show Project

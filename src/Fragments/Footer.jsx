@@ -13,7 +13,9 @@ const listFooter = [
 const Footer = () => {
   return (
     <div className="py-10 bg-gray-100 flex justify-center flex-col items-center text-center leading-loose">
-      <h1>Muhammad Susilo</h1>
+      <h1 className="mb-5 text-2xl hover:underline decoration-wavy decoration-orange-500 active:decoration-violet-500">
+        <span>Muhammad</span> <span>Susilo</span>
+      </h1>
       <ul className="flex gap-4 mb-2 ">
         {listFooter.map((list) => {
           <li key={list.id}>
@@ -22,8 +24,8 @@ const Footer = () => {
         })}
       </ul>
       <SosialMedia />
-      <div className="text-sm">
-        <p>Copyright &copy; 2021 Muhammad Susilo. All rights reserved.</p>
+      <div className="text-sm mt-2">
+        <p>Copyright &copy; 2024 Muhammad Susilo. All rights reserved.</p>
         <p>in created to React JS and Tailwind CSS</p>
       </div>
     </div>

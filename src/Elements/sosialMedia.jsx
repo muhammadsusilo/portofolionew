@@ -39,13 +39,13 @@ const sMedia = [
 ];
 const SosialMedia = () => {
   return (
-    <div className="w-fit mx-3 flex max-sm:justify-center">
+    <div className="w-fit mx-3 flex max-sm:justify-center max-sm:items-center max-sm:w-auto">
       {sMedia.map((media) => (
         <div className="text-center group"key={media.id}>
           <Link to={media.href}>
             <FontAwesomeIcon
               icon={media.ikon}
-              className="bg-gray-300 rounded-full p-3 mx-2 size-6 group-hover:scale-150 transition-all duration-200"
+              className="bg-gray-300 rounded-full p-3 mx-2 size-6 group-hover:scale-150 transition-all duration-200 active:bg-violet-500 active:text-white"
             />
           </Link>
         </div>

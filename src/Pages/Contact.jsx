@@ -40,14 +40,18 @@ const Contact = () => {
         <Container.header>Contact</Container.header>
         <div className="bg">
           <h2 className="my-1 font-semibold text-lg">Contact information</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            Here is my Contact, if want to collaborate, interested connecting and discussion potential opportunities.
+          </p>
           <ul className="leading-normal">
             {contactku.map((contac) => {
               return (
-                <li key={contac.id} >
-                  <Link to={contac.link}>
-                    {/* {[contac.ikon, contac.name]} */}
-                    <span className='mr-2'>{contac.ikon}</span>
+                <li key={contac.id}>
+                  <Link
+                    to={contac.link}
+                    className=" bg-sky-500 flex max-w-fit px-3 m-1 rounded-md hover:underline decoration-double decoration-gray-100 active:bg-violet-600"
+                  >
+                    <span className="mr-2 text-xl">{contac.ikon}</span>
                     <span>{contac.name}</span>
                   </Link>
                 </li>

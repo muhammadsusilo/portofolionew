@@ -5,8 +5,7 @@ const Certificate = () => {
     <Container>
       <Container.header>Education and Certificate</Container.header>
       <p className="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-        officiis alias dolor. Eligendi quam alias nam et sint
+        These is a education and certificate learning outcomes outside nonformal education
       </p>
       <div className="flex justify-center pt-5">
         {/* nanti di sini di bikin caurosel */}

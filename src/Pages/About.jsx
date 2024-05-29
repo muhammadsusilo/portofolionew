@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Container>
       <Container.header>About</Container.header>
-      <div className=" flex justify-between max-sm:flex max-sm:flex-col max-sm:justify-center">
+      <div className="flex justify-between max-sm:flex max-sm:flex-col max-sm:justify-center">
         <div className='max-sm:order-2'>
           <img src="img/skills.svg" alt="About" />
         </div>
@@ -21,6 +21,7 @@ const About = () => {
             Hi I, Muhammad Susilo call me silo is ambiton to career Software
             Developer. And undergraduate in Terbuka University with major system
             Information.
+            {/* tambahkan tujuan career */}
           </p>
           <p>
             <span className="font-semibold"> Skills</span> <br />
