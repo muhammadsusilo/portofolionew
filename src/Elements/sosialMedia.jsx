@@ -15,7 +15,7 @@ const sMedia = [
   {
     id: 1,
     name: 'Email',
-    href: 'https://www.linkedin.com/in/muhammadsusilo/',
+    href: '#',
     ikon: faEnvelope,
   },
   {
@@ -33,15 +33,15 @@ const sMedia = [
   {
     id: 4,
     name: 'WhatsApp',
-    href: 'https://www.linkedin.com/in/muhammadsusilo/',
+    href: '#',
     ikon: faWhatsapp,
   },
 ];
 const SosialMedia = () => {
   return (
-    <div className="w-fit mx-3 flex max-sm:justify-center max-sm:items-center max-sm:w-auto">
+    <div className="w-fit mx-3 flex animate__animated animate__backInUp animate__slow max-sm:justify-center max-sm:items-center max-sm:w-auto">
       {sMedia.map((media) => (
-        <div className="text-center group"key={media.id}>
+        <div className="text-center group" key={media.id}>
           <Link to={media.href}>
             <FontAwesomeIcon
               icon={media.ikon}

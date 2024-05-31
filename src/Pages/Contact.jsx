@@ -36,12 +36,13 @@ const contactku = [
 const Contact = () => {
   return (
     <Fragment>
-      <Container background="bg-gray-200">
+      <Container id="contact" background="bg-gray-200">
         <Container.header>Contact</Container.header>
         <div className="bg">
           <h2 className="my-1 font-semibold text-lg">Contact information</h2>
           <p>
-            Here is my Contact, if want to collaborate, interested connecting and discussion potential opportunities.
+            Here is my Contact, if want to collaborate, interested connecting
+            and discussion potential opportunities.
           </p>
           <ul className="leading-normal">
             {contactku.map((contac) => {

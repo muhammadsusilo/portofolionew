@@ -10,11 +10,15 @@ const skills = [
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <Container.header>About</Container.header>
       <div className="flex justify-between max-sm:flex max-sm:flex-col max-sm:justify-center">
-        <div className='max-sm:order-2'>
-          <img src="img/skills.svg" alt="About" />
+        <div className="max-sm:order-2">
+          <img
+            src="img/skills.svg"
+            alt="About"
+            className="animate__animated animate__fadeInUpBig"
+          />
         </div>
         <div className="pl-10 max-sm:order-1 max-sm:p-0">
           <p className="my-1">
