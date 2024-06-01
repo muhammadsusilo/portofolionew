@@ -1,11 +1,18 @@
-import Cart from "../Elements/cart";
-import Container from "../Fragments/Container";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Cart from '../Elements/cart';
+import Container from '../Fragments/Container';
 
 const Project = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Container id="project" background="bg-gray-200">
       <Container.header>Project</Container.header>
-      <div className="flex justify-center">
+      <div className="flex justify-center" data-aos="zoom-in">
         <Cart>
           <Cart.Header src="https://placehold.co/300x180" alt="E-Learning" />
           <Cart.Content

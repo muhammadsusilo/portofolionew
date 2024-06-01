@@ -1,9 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faIdCard } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import Footer from '../Fragments/Footer';
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Footer from '../Fragments/Footer';
 import Container from '../Fragments/Container';
 import { icon } from '@fortawesome/fontawesome-svg-core';
 
@@ -30,15 +33,19 @@ const contactku = [
     id: 4,
     name: 'Bussiness Card',
     ikon: <FontAwesomeIcon icon={faIdCard} />,
-    link: "#",
+    link: '#',
   },
 ];
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Fragment>
       <Container id="contact" background="bg-gray-200">
         <Container.header>Contact</Container.header>
-        <div className="bg">
+        <div className="bg" data-aos="fade-down">
           <h2 className="my-1 font-semibold text-lg">Contact information</h2>
           <p>
             Here is my Contact, if want to collaborate, interested connecting
@@ -50,7 +57,7 @@ const Contact = () => {
                 <li key={contac.id}>
                   <Link
                     to={contac.link}
-                    className=" bg-sky-500 flex max-w-fit px-3 m-1 rounded-md hover:underline decoration-double decoration-gray-100 active:bg-violet-600"
+                    className=" bg-sky-500 flex max-w-fit px-3 m-1 rounded-md transition-all hover:underline hover:translate-x-7 transition duration-100 decoration-double decoration-gray-100 active:bg-violet-600"
                   >
                     <span className="mr-2 text-xl">{contac.ikon}</span>
                     <span>{contac.name}</span>

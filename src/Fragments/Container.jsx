@@ -1,5 +1,8 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Container = (props) => {
-  const { children, background,id} = props;
+  const { children, background, id } = props;
   return (
     <div
       id={`${id}`}
@@ -13,7 +16,10 @@ const Container = (props) => {
 const header = (props) => {
   const { children } = props;
   return (
-    <h1 className="text-3xl mt-7 font-semibold flex justify-center mb-4 max-lg:text-2xl">
+    <h1
+      className="text-3xl mt-7 font-semibold flex justify-center mb-4 max-lg:text-2xl"
+      
+    >
       {children}
     </h1>
   );

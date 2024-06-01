@@ -1,10 +1,17 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Container from '../Fragments/Container';
 
 const Certificate = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Container id="certificate">
       <Container.header>Education and Certificate</Container.header>
-      <p className="text-center">
+      <p className="text-center" data-aos="zoom-out">
         These is a education and certificate learning outcomes outside nonformal
         education
       </p>
@@ -14,6 +21,7 @@ const Certificate = () => {
           src="https://placehold.co/300x200?font=roboto"
           alt="caurosel"
           className="rounded"
+          data-aos="zoom-in-up"
         />
       </div>
     </Container>

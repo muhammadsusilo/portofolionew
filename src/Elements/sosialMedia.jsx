@@ -39,7 +39,7 @@ const sMedia = [
 ];
 const SosialMedia = () => {
   return (
-    <div className="w-fit mx-3 flex animate__animated animate__backInUp animate__slow max-sm:justify-center max-sm:items-center max-sm:w-auto">
+    <div className="w-fit mx-3 my-3 flex animate__animated animate__backInUp animate__slow max-sm:justify-center max-sm:items-center max-sm:w-auto">
       {sMedia.map((media) => (
         <div className="text-center group" key={media.id}>
           <Link to={media.href}>
