@@ -3,7 +3,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Container from '../Fragments/Container';
 
-
 const skills = [
   'HTML5 & CSS3',
   'SASS',
@@ -12,12 +11,10 @@ const skills = [
   'React JS',
 ];
 
-
 const About = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-
 
   return (
     <Container id="about">

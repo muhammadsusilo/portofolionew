@@ -8,26 +8,25 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from '../Fragments/Footer';
 import Container from '../Fragments/Container';
-import { icon } from '@fortawesome/fontawesome-svg-core';
 
 const contactku = [
   {
     id: 1,
-    name: 'Email',
+    name: 'muhammadsusilo238@gmail.com',
     ikon: <FontAwesomeIcon icon={faEnvelope} />,
-    link: '#',
+    link: 'mailto:muhammadsusilo238@gmail.com',
   },
   {
     id: 2,
     name: 'Linkedin',
     ikon: <FontAwesomeIcon icon={faLinkedin} />,
-    link: '#',
+    link: 'https://www.linkedin.com/in/muhammadsusilo/',
   },
   {
     id: 3,
     name: 'WhatsApp',
     ikon: <FontAwesomeIcon icon={faWhatsapp} />,
-    link: '#',
+    link: 'https://api.whatsapp.com/send?phone=%20085642045753&text=Halo%2C%20Muhamad%20Susilo',
   },
   {
     id: 4,
@@ -52,19 +51,17 @@ const Contact = () => {
             and discussion potential opportunities.
           </p>
           <ul className="leading-normal">
-            {contactku.map((contac) => {
-              return (
+            {contactku.map(contac => (
                 <li key={contac.id}>
-                  <Link
-                    to={contac.link}
+                  <a
+                    href={contac.link}
                     className=" bg-sky-500 flex max-w-fit px-3 m-1 rounded-md transition-all hover:underline hover:translate-x-7 transition duration-100 decoration-double decoration-gray-100 active:bg-violet-600"
                   >
                     <span className="mr-2 text-xl">{contac.ikon}</span>
                     <span>{contac.name}</span>
-                  </Link>
+                  </a>
                 </li>
-              );
-            })}
+))}
           </ul>
           <Link to="#" className="w-fit ">
             <button className="my-5 p-2 px-16 bg-orange-400 rounded-lg hover:bg-orange-500 max-sm:w-full">

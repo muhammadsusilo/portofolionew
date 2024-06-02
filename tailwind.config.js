@@ -4,5 +4,13 @@ export default {
   theme: {
     extend: {},
   },
+  variants: {
+    extend: {
+      transform: ['hover', 'focus'],
+      translate: ['hover', 'focus'],
+      rotate: ['hover', 'focus'],
+      borderColor: ['hover', 'focus'],
+    },
+  },
   plugins: [],
 };

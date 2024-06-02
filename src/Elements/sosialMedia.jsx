@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+
 import {
   faFacebook,
   faSquareWhatsapp,
@@ -45,7 +46,7 @@ const SosialMedia = () => {
           <Link to={media.href}>
             <FontAwesomeIcon
               icon={media.ikon}
-              className="bg-gray-300 rounded-full p-3 mx-2 size-6 group-hover:scale-150 transition-all duration-200 active:bg-violet-500 active:text-white"
+              className="bg-gray-300 rounded-full p-3 mx-2 size-6 transition-all duration-200 group-hover:scale-150 active:bg-violet-500 active:text-white"
             />
           </Link>
         </div>
