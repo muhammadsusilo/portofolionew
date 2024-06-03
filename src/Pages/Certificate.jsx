@@ -10,12 +10,35 @@ const Certificate = () => {
       </p>
       <div className="flex justify-center pt-5">
         {/* nanti di sini di bikin caurosel */}
-        <img
+        {/* <img
           src="https://placehold.co/300x200?font=roboto"
           alt="carousel"
           className="rounded"
           data-aos="zoom-in-up"
-        />
+        /> */}
+        <div className="carousel gap-2">
+          <div className="carousel-item rounded-box">
+            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+          </div>
+          <div className="carousel-item rounded-box">
+            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+          </div>
+          <div className="carousel-item rounded-box">
+            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+          </div>
+          <div className="carousel-item rounded-box">
+            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+          </div>
+          <div className="carousel-item rounded-box">
+            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+          </div>
+          <div className="carousel-item rounded-box">
+            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+          </div>
+          <div className="carousel-item rounded-box">
+            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+          </div>
+        </div>
       </div>
     </Container>
   );
