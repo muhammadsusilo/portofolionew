@@ -1,6 +1,3 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Container from '../Fragments/Container';
 
 const skills = [
@@ -12,18 +9,11 @@ const skills = [
 ];
 
 const About = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <Container id="about">
       <Container.header>About</Container.header>
       <div className="flex justify-between max-sm:flex max-sm:flex-col max-sm:justify-center">
-        <div
-          className="max-sm:order-2"
-          data-aos="fade-in"
-        >
+        <div className="max-sm:order-2" data-aos="fade-in">
           <img src="img/skills.svg" alt="About" />
         </div>
         <div className="pl-10 max-sm:order-1 max-sm:p-0">

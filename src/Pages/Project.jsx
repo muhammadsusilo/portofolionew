@@ -1,14 +1,7 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Cart from '../Elements/cart';
 import Container from '../Fragments/Container';
 
 const Project = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <Container id="project" background="bg-gray-200">
       <Container.header>Project</Container.header>

@@ -1,6 +1,3 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 const Container = (props) => {
   const { children, background, id } = props;
   return (

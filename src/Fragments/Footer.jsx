@@ -32,9 +32,6 @@ const Footer = () => {
             key={list.id}
             className="px-3 transition-all rounded-md hover:border hover:border-violet-700 max-sm:px-1 max-sm:hover:text-violet-600"
           >
-            {/* <Link to={list.link} className="">
-              {list.name}
-            </Link> */}
             <Link to={list.link} onClick=
               {(e) => {
                 e.preventDefault();

@@ -3,9 +3,6 @@ import { faEnvelope, faIdCard } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Footer from '../Fragments/Footer';
 import Container from '../Fragments/Container';
 
@@ -36,10 +33,6 @@ const contactku = [
   },
 ];
 const Contact = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <Fragment>
       <Container id="contact" background="bg-gray-200">
@@ -51,17 +44,17 @@ const Contact = () => {
             and discussion potential opportunities.
           </p>
           <ul className="leading-normal">
-            {contactku.map(contac => (
-                <li key={contac.id}>
-                  <a
-                    href={contac.link}
-                    className=" bg-sky-500 flex max-w-fit px-3 m-1 rounded-md transition-all hover:underline hover:translate-x-7 transition duration-100 decoration-double decoration-gray-100 active:bg-violet-600"
-                  >
-                    <span className="mr-2 text-xl">{contac.ikon}</span>
-                    <span>{contac.name}</span>
-                  </a>
-                </li>
-))}
+            {contactku.map((contac) => (
+              <li key={contac.id}>
+                <a
+                  href={contac.link}
+                  className=" bg-sky-500 flex max-w-fit px-3 m-1 rounded-md transition-all hover:underline hover:translate-x-7 transition duration-100 decoration-double decoration-gray-100 active:bg-violet-600"
+                >
+                  <span className="mr-2 text-xl">{contac.ikon}</span>
+                  <span>{contac.name}</span>
+                </a>
+              </li>
+            ))}
           </ul>
           <Link to="#" className="w-fit ">
             <button className="my-5 p-2 px-16 bg-orange-400 rounded-lg hover:bg-orange-500 max-sm:w-full">
