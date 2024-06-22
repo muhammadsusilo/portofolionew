@@ -32,7 +32,7 @@ const Home = () => {
           </p>
           <div className="font-semibold my-8 flex group: max-sm:flex max-sm:justify-center max-sm:my-6">
             <div className="group mr-4">
-              <Button css="group-hover:translate-y-6 bg-orange-400 hover:bg-orange-600 transition duration-200 ease-in  p-3 rounded-md max-lg:p-2 max-sm:px-8 animate__animated animate__fadeIn">
+              <Button css="group-hover:translate-y-6 px-8 bg-orange-400 hover:bg-orange-600 transition duration-200 ease-in  p-3 rounded-md max-lg:p-2 max-sm:px-8 animate__animated animate__fadeIn">
                 Hire Me
               </Button>
             </div>
