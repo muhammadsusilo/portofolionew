@@ -2,7 +2,12 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'p-project': "url('/img/project.svg')",
+        'p-contact': "url('/img/footer-texture.png')",
+      },
+    },
   },
   variants: {
     extend: {
