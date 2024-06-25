@@ -3,7 +3,7 @@ import Container from '../Fragments/Container';
 
 const Project = () => {
   return (
-    <Container id="project" background="bg-gray-200">
+    <Container id="project" background="pb-14 bg-gray-200">
       <Container.header>Project</Container.header>
       <div className="flex justify-center" data-aos="zoom-in">
         <Cart>

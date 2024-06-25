@@ -8,7 +8,7 @@ const Certificate = () => {
         These is a education and certificate learning outcomes outside nonformal
         education
       </p>
-      <div className="flex justify-center pt-5">
+      <div className="flex justify-center pt-5 pb-14">
         {/* nanti di sini di bikin caurosel */}
         {/* <img
           src="https://placehold.co/300x200?font=roboto"

@@ -3,7 +3,7 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Home', href: '#home', current: true },
+  { name: 'Home', href: '#home', current: false },
   { name: 'About', href: '#about', current: false },
   { name: 'Project', href: '#project', current: false },
   { name: 'Certificate', href: '#certificate', current: false },
@@ -44,9 +44,9 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <Link
+                      <a
                         key={item.name}
-                        to={item.href}
+                        href={item.href}
                         className={classNames(
                           item.current
                             ? ' text-white'
@@ -56,7 +56,7 @@ export default function Navbar() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>

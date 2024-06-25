@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Container id="about">
       <Container.header>About</Container.header>
-      <div className="flex justify-between max-sm:flex max-sm:flex-col max-sm:justify-center">
+      <div className="flex justify-between pb-14 max-sm:flex max-sm:flex-col max-sm:justify-center">
         <div className="max-sm:order-2" data-aos="fade-in">
           <img src="img/skills.svg" alt="About" />
         </div>

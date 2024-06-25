@@ -35,7 +35,7 @@ const contactku = [
 const Contact = () => {
   return (
     <Fragment>
-      <Container id="contact" background="bg-gray-200">
+      <Container id="contact" background="bg-gray-200 pb-14">
         <Container.header>Contact</Container.header>
         <div className="bg" data-aos="fade-down">
           <h2 className="my-1 font-semibold text-lg">Contact information</h2>
