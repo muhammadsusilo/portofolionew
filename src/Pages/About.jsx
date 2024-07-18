@@ -11,27 +11,33 @@ const skills = [
 const About = () => {
   return (
     <Container id="about">
-      <Container.header>About</Container.header>
-      <div className="flex justify-between pb-14 max-sm:flex max-sm:flex-col max-sm:justify-center">
-        <div className="max-sm:order-2" data-aos="fade-in">
-          <img src="img/skills.svg" alt="About" />
-        </div>
-        <div className="pl-10 max-sm:order-1 max-sm:p-0">
-          <p className="my-1" data-aos="fade-right">
-            Hi I, Muhammad Susilo call me silo is ambiton to career Software
-            Developer. And undergraduate in Terbuka University with major system
-            Information.
-            {/* tambahkan tujuan career */}
-          </p>
-          <p data-aos="fade-left">
-            <span className="font-semibold"> Skills</span> <br />
-            Skills silo yang dimiliki:
-          </p>
-          <ul className="mt-3 list-disc pl-6 text-sm" data-aos="fade-left">
-            {skills.map((skill) => (
-              <li>{skill}</li>
-            ))}
-          </ul>
+      <div className="overflow-hidden max-sm:overflow-x-hidden max-sm:px-4">
+        <Container.header>About</Container.header>
+        <div className="flex justify-between pb-14 max-sm:flex-col max-sm:justify-center">
+          {/* <div className="max-sm:order-2" data-aos="fade-in">
+            <img src="img/skills.svg" alt="About" className='max-sm:w-3/4 max-w-full' />
+          </div> */}
+          <div className="pl-10 max-sm:pl-0">
+            <p className="my-1" data-aos="fade-right">
+              Hi, I am Muhammad Susilo, you can call me Silo. I am ambitious to
+              pursue a career as a Software Developer and currently an
+              undergraduate at Terbuka University majoring in Information
+              Systems.
+              {/* tambahkan tujuan career */}
+            </p>
+            <p data-aos="fade-left">
+              <span className="font-semibold">Skills</span> <br />
+              Skills that Silo possesses:
+            </p>
+            <ul
+              className="mt-3 list-disc pl-6 text-sm max-sm:pl-4"
+              data-aos="fade-left"
+            >
+              {skills.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </Container>

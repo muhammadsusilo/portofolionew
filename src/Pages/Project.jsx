@@ -19,23 +19,23 @@ const Project = () => {
             <Cart.Footer />
           </Cart>
 
-          <Cart>
+          {/* <Cart>
             <Cart.Header src="https://placehold.co/300x180" alt="E-Learning" />
             <Cart.Content
               title="E-learning"
               description="E-learning is Website to scholl in online learning"
             />
             <Cart.Footer />
-          </Cart>
+          </Cart> */}
 
-          <Cart>
+          {/* <Cart>
             <Cart.Header src="https://placehold.co/300x180" alt="E-Learning" />
             <Cart.Content
               title="E-learning"
               description="E-learning is Website to scholl in online learning"
             />
             <Cart.Footer />
-          </Cart>
+          </Cart> */}
 
         </div>
       </Container>

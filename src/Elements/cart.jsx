@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Cart = (props) => {
   const { children } = props;
   return (
-    <div className="bg-white flex flex-col w-full max-w-72  rounded-lg shadow-lg shadow-gray-600 max-lg:">
+    <div className="bg-white flex flex-col w-full max-w-72  rounded-lg shadow-lg shadow-gray-600 max-lg: max-sm:carousel-item max-sm:rounded-box">
       {children}
     </div>
   );

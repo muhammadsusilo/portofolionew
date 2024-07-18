@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'p-project': "url('/img/project.svg')",
-        'p-contact': "url('/img/footer-texture.png')",
+        'p-project': "url('/img/project.png')",
+        'p-contact': "url('/img/contact.png')",
       },
     },
   },
