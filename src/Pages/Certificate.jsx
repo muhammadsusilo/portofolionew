@@ -9,34 +9,27 @@ const Certificate = () => {
         education
       </p>
       <div className="flex justify-center pt-5 pb-14">
-        {/* nanti di sini di bikin caurosel */}
-        {/* <img
-          src="https://placehold.co/300x200?font=roboto"
-          alt="carousel"
-          className="rounded"
-          data-aos="zoom-in-up"
-        /> */}
         <div className="carousel gap-2">
           <div className="carousel-item rounded-box">
-            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+            <img
+              src="img/certificate_udemy.jpg"
+              alt="Certificate"
+              className="w-80 h-56"
+            />
           </div>
           <div className="carousel-item rounded-box">
-            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+            <img
+              src="img/certificate_meta.jpg"
+              alt="Certificate"
+              className="w-80 h-56"
+            />
           </div>
           <div className="carousel-item rounded-box">
-            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
-          </div>
-          <div className="carousel-item rounded-box">
-            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
-          </div>
-          <div className="carousel-item rounded-box">
-            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
-          </div>
-          <div className="carousel-item rounded-box">
-            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
-          </div>
-          <div className="carousel-item rounded-box">
-            <img src="https://placehold.co/320x200?font=roboto" alt="Burger" />
+            <img
+              src="img/certificate_dicoding.jpg"
+              alt="Certificate"
+              className="w-80 h-56"
+            />
           </div>
         </div>
       </div>

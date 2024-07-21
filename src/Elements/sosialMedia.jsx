@@ -37,7 +37,7 @@ const sMedia = [
   {
     id: 4,
     name: 'WhatsApp',
-    href: 'https://api.whatsapp.com/send?phone=%20085642045753&text=Halo%2C%20Muhamad%20Susilo',
+    href: 'https://api.whatsapp.com/send?phone=%20085642045753&text=Halo%2C%20Muhammad%20Susilo',
     ikon: faWhatsapp,
   },
 ];

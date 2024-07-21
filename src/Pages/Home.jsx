@@ -9,7 +9,7 @@ import Button from '../Elements/Button';
 const Home = () => {
   return (
     <div id="home" className="overflow-hidden max-sm:overflow-x-hidden">
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="p-36 py-24 pt-36 flex h-full bg-gray-200 justify-between max-lg:p-16 max-lg:pt-28 max-sm:group target:scale-100 target:opacity-100 max-sm:flex max-sm:justify-center max-sm:flex-col max-w-sm:items-center max-sm:px-6 max-sm:py-9 max-sm:pt-24 max-sm:overflow-x-hidden">
         <div className=" w-2/3 max-sm:order-2 max-sm:w-full ">
           <div className="animate__animated animate__backInLeft">
@@ -47,7 +47,7 @@ const Home = () => {
           <img
             src="img/muhammadsusiloo.svg"
             alt="Muhammad Susilo"
-            className="ml-10  max-sm:m-auto max-sm:w-2/5"
+            className="ml-10  max-sm:m-auto max-sm:w-4/6"
           />
         </div>
       </div>

@@ -14,9 +14,6 @@ const About = () => {
       <div className="overflow-hidden max-sm:overflow-x-hidden max-sm:px-4">
         <Container.header>About</Container.header>
         <div className="flex justify-between pb-14 max-sm:flex-col max-sm:justify-center">
-          {/* <div className="max-sm:order-2" data-aos="fade-in">
-            <img src="img/skills.svg" alt="About" className='max-sm:w-3/4 max-w-full' />
-          </div> */}
           <div className="pl-10 max-sm:pl-0">
             <p className="my-1" data-aos="fade-right">
               Hi, I am Muhammad Susilo, you can call me Silo. I am ambitious to

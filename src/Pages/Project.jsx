@@ -10,6 +10,7 @@ const Project = () => {
       >
         <Container.header>Project</Container.header>
         <div className="flex gap-6 justify-center" data-aos="zoom-in">
+          {/* untuk phone nanti di bikin caurosel */}
           <Cart>
             <Cart.Header src="https://placehold.co/300x180" alt="E-Learning" />
             <Cart.Content
